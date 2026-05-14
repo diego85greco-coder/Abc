@@ -6087,9 +6087,13 @@ function sendForgot(){
       <button onclick="closeBottleWrite()" style="width:100%;padding:11px;background:none;border:none;color:var(--ink4);font-size:13px;cursor:pointer;font-family:'Jost',sans-serif">Cancelar</button>
         <nav class="bottom-nav">
         <div onclick="showTab('home')">🏠</div>
-        <div onclick="showTab('chat')">💬</div>
-        <div onclick="showTab('sos')">🆘</div>
-        <div onclick="showTab('perfil')">👤</div>
+            </div> <!-- Cerramos el main-content que abrimos arriba -->
+
+    <nav class="bottom-nav">
+        <div onclick="showTab('home')" style="cursor:pointer;font-size:24px">🏠</div>
+        <div onclick="showTab('chat')" style="cursor:pointer;font-size:24px">💬</div>
+        <div onclick="showTab('sos')" style="cursor:pointer;font-size:24px">🆘</div>
+        <div onclick="showTab('perfil')" style="cursor:pointer;font-size:24px">👤</div>
     </nav>
 </body>
 </html>
