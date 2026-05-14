@@ -1,63 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-<title>Velo — Acompañamos emociones</title>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-        <style>
-        * {
-            box-sizing: border-box;
-            -webkit-tap-highlight-color: transparent;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Velo</title>
+    <style>
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        :root { --cream: #FDFBF6; --sage: #1B5E3A; --ink: #1a1a1a; }
+        body { 
+            margin: 0; padding: 0; 
+            background-color: var(--cream); 
+            font-family: -apple-system, sans-serif;
+            display: block; width: 100%; min-height: 100vh;
+            overflow-y: auto; overflow-x: hidden;
         }
-
-        :root {
-            --cream: #FDFBF6;
-            --sage: #1B5E3A;
-            --peach: #FFD4A3;
-            --ink: #1a1a1a;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: var(--cream);
-            font-family: -apple-system, system-ui, sans-serif;
-            display: block; /* Esto evita el amontonamiento */
-            min-height: 100vh;
-            overflow-x: hidden;
-            overflow-y: auto !important; /* Permite scroll */
-        }
-
-        .main-content {
-            position: relative;
-            padding: 20px;
-            padding-bottom: 120px; /* Espacio para que el menú no tape nada */
-            display: block;
-        }
-
+        .main-content { padding: 20px; padding-bottom: 100px; }
         .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 80px;
-            background: white;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            border-top: 1px solid rgba(0,0,0,0.1);
+            position: fixed; bottom: 0; left: 0; right: 0;
+            height: 80px; background: white;
+            display: flex; justify-content: space-around; align-items: center;
+            border-top: 1px solid rgba(0,0,0,0.1); z-index: 9999;
             padding-bottom: env(safe-area-inset-bottom);
-            z-index: 99999;
         }
+        .nav-item { font-size: 24px; cursor: pointer; background: none; border: none; }
     </style>
-      <span style="animation:float 2s ease-in-out infinite">🌿</span>
-      <span style="animation:float 2s .2s ease-in-out infinite">💚</span>
-      <span style="animation:float 2s .4s ease-in-out infinite">🌸</span>
-    </div>
-    <button class="btn btn-sage" style="padding:13px 32px;font-size:14px" onclick="closeSuc()">Volver 🌿</button>
-  </div>
-
+</head>
+<body>
+    <div class="main-content">
   <!-- SOS MODAL -->
   <div class="modal-ov" id="sosModal">
     <div class="msheet" style="background:linear-gradient(160deg,#FFF6F4,#FFFAF8)">
