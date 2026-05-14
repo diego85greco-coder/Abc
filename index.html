@@ -47,20 +47,20 @@ body{font-family:'Jost',sans-serif;display:flex;justify-content:center;align-ite
 @keyframes waveIn{0%{opacity:0;transform:translateY(10px)}100%{opacity:1;transform:translateY(0)}}
 @keyframes popIn{0%{transform:scale(0) rotate(-12deg)}65%{transform:scale(1.12)}100%{transform:scale(1)}}
 @keyframes sheetUp{0%{transform:translateY(100%);opacity:.5}100%{transform:translateY(0);opacity:1}}
-@keyframes logoEntrance{0%{opacity:0;transform:scale(.82) translateY(22px)}100%{opacity:1;transform:scale(1) translateY(0)}}
-@keyframes logoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+100%{opacity:1;transform:scale(1) translateY(0)}}
+50%{transform:translateY(-9px)}}
 @keyframes moonBreath{0%,100%{box-shadow:0 0 30px 10px rgba(240,225,140,.28),0 0 70px 25px rgba(200,185,100,.14)}50%{box-shadow:0 0 45px 16px rgba(240,225,140,.42),0 0 90px 35px rgba(200,185,100,.22)}}
-@keyframes sunBreath{0%,100%{box-shadow:0 0 40px 14px rgba(255,215,50,.7),0 0 80px 30px rgba(255,180,0,.4)}50%{box-shadow:0 0 60px 22px rgba(255,215,50,.9),0 0 110px 45px rgba(255,180,0,.55)}}
+50%{box-shadow:0 0 60px 22px rgba(255,215,50,.9),0 0 110px 45px rgba(255,180,0,.55)}}
 @keyframes sunGlowPulse{0%,100%{opacity:.7}50%{opacity:1}}
 @keyframes fogDrift{0%,100%{transform:translateX(0);opacity:.6}50%{transform:translateX(18px);opacity:.9}}
-@keyframes shimmer{0%,100%{opacity:.5}50%{opacity:1}}
+50%{opacity:1}}
 @keyframes shootingStarAnim{0%{transform:translate(0,0) scaleX(1);opacity:1}70%{opacity:.8}100%{transform:translate(-320px,160px) scaleX(.05);opacity:0}}
 @keyframes fireflyGlow{0%,100%{opacity:.08;transform:translate(0,0)}25%{opacity:.95}50%{opacity:.25;transform:translate(10px,-14px)}75%{opacity:.7;transform:translate(-6px,10px)}}
 @keyframes starPulse{0%,100%{opacity:.3}50%{opacity:1}}
-@keyframes fadeUp{0%{opacity:0;transform:translateY(14px)}100%{opacity:1;transform:translateY(0)}}
+100%{opacity:1;transform:translateY(0)}}
 @keyframes logoEntrance{0%{opacity:0;transform:scale(.85) translateY(18px)}100%{opacity:1;transform:scale(1) translateY(0)}}
 @keyframes logoFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
-@keyframes moonFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+50%{transform:translateY(-10px)}}
 @keyframes shootStar{0%{transform:translate(0,0) scaleX(1);opacity:1}100%{transform:translate(-300px,150px) scaleX(.05);opacity:0}}
 @keyframes firefly{0%,100%{opacity:.1;transform:translate(0,0)}25%{opacity:.9}50%{opacity:.3;transform:translate(8px,-12px)}75%{opacity:.7;transform:translate(-5px,8px)}}
 @keyframes waterWave{0%,100%{d:path("M0 10 Q50 0 100 10 Q150 20 200 10 Q250 0 300 10 Q350 20 393 10")}50%{d:path("M0 10 Q50 20 100 10 Q150 0 200 10 Q250 20 300 10 Q350 0 393 10")}}
@@ -290,7 +290,7 @@ body{font-family:'Jost',sans-serif;display:flex;justify-content:center;align-ite
 .inbox-ic{width:42px;height:42px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
 .inbox-title{font-size:13px;font-weight:700;color:var(--ink);margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .inbox-preview{font-size:11px;color:var(--ink4);line-height:1.45;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.inbox-time{font-size:10px;color:var(--ink5);margin-top:4px};border:1.5px solid var(--border);border-radius:20px;padding:14px;margin-bottom:10px;box-shadow:var(--sh)}
+.inbox-time{font-size:10px;color:var(--ink5);margin-top:4px}
 .pe-row{display:flex;align-items:center;gap:11px;padding:9px 0;border-bottom:1px solid rgba(45,106,79,.06);cursor:pointer;transition:background .15s}
 .pe-row:last-child{border-bottom:none}
 .pe-ic{width:32px;height:32px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0}
@@ -515,34 +515,7 @@ body{font-family:'Jost',sans-serif;display:flex;justify-content:center;align-ite
   </div>
 
   <!-- ══ WELCOME BACK (10-day absence) ══ -->
-  <div style="position:absolute;inset:0;background:rgba(240,250,244,.97);z-index:900;display:none;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:28px" id="welcomeBack">
-    <!-- Animated top -->
-    <div style="display:flex;gap:8px;justify-content:center;margin-bottom:18px;font-size:30px">
-      <span style="animation:float 2.5s ease-in-out infinite">🌿</span>
-      <span style="animation:float 2.5s .2s ease-in-out infinite">💚</span>
-      <span style="animation:float 2.5s .4s ease-in-out infinite">🌸</span>
-      <span style="animation:float 2.5s .6s ease-in-out infinite">🌙</span>
-    </div>
-    <img id="wbLogo" style="height:46px;width:auto;margin-bottom:18px;opacity:.92" alt="Velo">
-    <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:28px;color:var(--sage);margin-bottom:8px;line-height:1.3">¡Te extrañamos!</div>
-    <div style="font-family:'Cormorant Garamond',serif;font-size:18px;color:var(--ink3);margin-bottom:16px">Bienvenido/a de vuelta a Velo 🌿</div>
-    <div style="background:rgba(255,255,255,.85);border:1.5px solid rgba(116,198,157,.2);border-radius:22px;padding:18px 20px;margin-bottom:18px;max-width:320px;text-align:left">
-      <div style="font-size:13px;color:var(--ink2);line-height:1.75">
-        Estamos aquí para acompañarte, como siempre.<br><br>
-        Hay personas que están esperando escuchar y ser escuchadas. Tu presencia en la comunidad importa.<br><br>
-        <b style="color:var(--sage2)">También necesitamos de tu gran ayuda.</b> Si podés colaborar con una pequeña donación, ayudás a que este espacio siga existiendo para todos. 💚
-      </div>
-    </div>
-    <!-- What's new / quick pills -->
-    <div style="display:flex;gap:7px;flex-wrap:wrap;justify-content:center;margin-bottom:20px">
-      <span style="padding:5px 12px;border-radius:100px;background:var(--sage7);border:1px solid rgba(116,198,157,.2);font-size:11px;color:var(--sage2);font-weight:600">🛡️ Guardianes esperándote</span>
-      <span style="padding:5px 12px;border-radius:100px;background:var(--lav3);border:1px solid rgba(196,181,232,.25);font-size:11px;color:#6E56A8;font-weight:600">💬 Feed activo</span>
-      <span style="padding:5px 12px;border-radius:100px;background:var(--peach3);border:1px solid rgba(212,168,100,.2);font-size:11px;color:var(--earth2);font-weight:600">🍾 Botellas nuevas</span>
-    </div>
-    <button style="width:100%;max-width:300px;padding:16px;background:linear-gradient(135deg,var(--sage),var(--sage2));border:none;border-radius:100px;color:#fff;font-size:14px;font-weight:700;cursor:pointer;font-family:'Jost',sans-serif;box-shadow:0 6px 22px rgba(45,106,79,.25);margin-bottom:10px" onclick="closeWelcomeBack(false)">Entrar a Velo 💚</button>
-    <button style="width:100%;max-width:300px;padding:13px;background:linear-gradient(135deg,#FFF5E0,#FFEAD0);border:1.5px solid rgba(212,168,100,.28);border-radius:100px;color:var(--earth);font-size:13px;font-weight:600;cursor:pointer;font-family:'Jost',sans-serif;margin-bottom:8px" onclick="closeWelcomeBack(true)">🙏 Entrar y también donar</button>
-    <button style="background:none;border:none;color:var(--ink5);font-size:11px;cursor:pointer;font-family:'Jost',sans-serif" onclick="closeWelcomeBack(false)">Solo entrar por ahora</button>
-  </div>
+  
 
   <!-- STATUS MODAL -->
   <div class="modal-ov" id="statusModal">
@@ -4046,7 +4019,7 @@ body{font-family:'Jost',sans-serif;display:flex;justify-content:center;align-ite
         <div style="width:32px;height:32px;border-radius:10px;background:rgba(116,198,157,.12);border:1px solid rgba(116,198,157,.2);display:flex;align-items:center;justify-content:center;font-size:16px">👑</div>
         <div>
           <div style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:18px;color:var(--sage4)">Super Admin</div>
-          <div style="font-size:9px;color:rgba(116,198,157,.4);letter-spacing:.5px" id="adminUserDisplay">diego.catalan.greco@gmail.com</div>
+          <div style="font-size:9px;color:rgba(116,198,157,.4);letter-spacing:.5px" id="adminUserDisplay">—</div>
         </div>
       </div>
       <button onclick="adminLogout()" style="padding:5px 11px;background:rgba(192,48,40,.12);border:1px solid rgba(192,48,40,.22);border-radius:100px;font-size:10px;font-weight:700;color:#F87070;cursor:pointer;font-family:'Jost',sans-serif">Salir</button>
@@ -4343,7 +4316,7 @@ body{font-family:'Jost',sans-serif;display:flex;justify-content:center;align-ite
             <div style="width:36px;height:36px;border-radius:10px;background:rgba(200,146,10,.15);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0">👑</div>
             <div style="flex:1">
               <div style="font-size:12px;font-weight:700;color:var(--gold2)">Super Admin</div>
-              <div style="font-size:10px;color:rgba(255,255,255,.4)" id="adminRoleEmail">diego.catalan.greco@gmail.com</div>
+              <div style="font-size:10px;color:rgba(255,255,255,.4)" id="adminRoleEmail">—</div>
             </div>
             <span style="padding:3px 8px;background:rgba(200,146,10,.15);border:1px solid rgba(200,146,10,.25);border-radius:100px;font-size:9px;font-weight:700;color:var(--gold2)">Tú</span>
           </div>
@@ -4509,9 +4482,12 @@ function initSplashTheme(){
   if(logoTag && logoImg){
     logoImg.src = logoTag.getAttribute('data-logo');
     logoImg.style.mixBlendMode = isNight ? 'screen' : 'multiply';
+    logoImg.style.filter = isNight ? 'brightness(1.08) drop-shadow(0 2px 12px rgba(180,220,255,.3))' : 'none';
   }
 
   // Load images from hidden DOM tags (avoids iOS JS string size limit)
+  var lw=document.querySelector('#splash > div[style*="padding-top"]');
+  if(lw) lw.style.paddingTop=isNight?'46%':'28%';
   var domDay   = document.getElementById('__bgDay');
   var domNight = document.getElementById('__bgNight');
   var bgDay    = document.getElementById('splashBgDay');
@@ -4795,9 +4771,7 @@ function buildParticlesNight(){
   if(!el) return;
   el.innerHTML='';
   // Shooting star
-  var ss=document.createElement('div');
-  ss.style.cssText='position:absolute;top:22%;right:8%;width:110px;height:1.5px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.9) 55%,transparent);border-radius:2px;opacity:0;animation:shootingStarAnim 2.2s 5s ease-in infinite;transform-origin:right center';
-  el.appendChild(ss);
+  /* shooting star removed */
   // Fireflies
   [[14,60],[22,68],[34,57],[47,71],[59,64],[71,59],[80,67],[87,55],[19,54],[55,74]].forEach(function(p,i){
     var d=document.createElement('div');
@@ -5024,14 +4998,17 @@ async function showAISummary(){
   // Call Claude AI API for summary
   try{
     var moodSummary=moods.map(function(m){return m.date+': '+m.emoji+' '+m.label+(m.note?' - '+m.note:'');}).join('\n');
-    fetch('https://api.anthropic.com/v1/messages',{
+    var resp=await fetch('https://api.anthropic.com/v1/messages',{
       method:'POST',
-      headers:{'Content-Type':'application/json'},
+      headers:{'Content-Type':'application/json','x-api-key':'','anthropic-version':'2023-06-01'},
       body:JSON.stringify({
-        model:'claude-sonnet-4-20250514',
-        max_tokens:1000,
+        model:'claude-3-5-sonnet-20241022',
+        max_tokens:500,
+        messages:[{role:'user',content:'Escribe un resumen breve y empático en español sobre estos estados de ánimo registrados este mes:\n'+moodSummary}]
       })
     });
+    var aiData=await resp.json();
+    var txt=(aiData.content&&aiData.content[0])?aiData.content[0].text:'';
     var parts=txt.split('\n\n');
     document.getElementById('aiText').textContent=parts[0]||txt;
     document.getElementById('aiInsights').textContent=parts.slice(1).join(' ')||'Seguí registrando tus emociones para recibir más insights.';
@@ -5775,8 +5752,9 @@ function openProProfile(name){
   toast('👤','Ver perfil de '+name+' (próximamente)');
 }
 // ── ADMIN ────────────────────────────────────────────────
-var ADMIN_EMAIL = 'diego.catalan.greco@gmail.com';
-var ADMIN_PASS  = 'Diego1985!';
+var ADMIN_EMAIL = '';
+var ADMIN_PASS  = '';
+// Note: Admin authentication must be validated server-side. Never store credentials in client JS.
 var adminAuthed = false;
 function adminLogin(){
   var em = document.getElementById('adminEmail');
@@ -6015,7 +5993,7 @@ function updateBreathUI(){
   if(eEl) eEl.textContent = step.emoji;
   if(cEl) cEl.textContent = step.secs;
   if(cir){
-    var scales = {Inhala:'scale(1.25)',Reten:'scale(1.1)',Exhala:'scale(0.85)'};
+    var scales = {Inhala:'scale(1.25)','Retén':'scale(1.1)',Exhala:'scale(0.85)'};
     cir.style.transform = scales[step.phase]||'scale(1)';
     cir.style.borderColor = step.phase==='Inhala'?'rgba(168,212,232,.6)':
                             step.phase==='Exhala'?'rgba(168,212,232,.2)':'rgba(168,212,232,.4)';
@@ -6227,24 +6205,6 @@ function goBack_contact(){
   var from=typeof contactFrom!=='undefined'?contactFrom:'home';
   goTo(from);
 }
-function checkWelcomeBack(){
-  var wbLogo=document.getElementById('wbLogo');
-  if(wbLogo){var logo=document.querySelector('#splashLogo');if(logo&&logo.src)wbLogo.src=logo.src;}
-  var lastVisit=safeLS('get','velo_last_visit');
-  var now=Date.now();
-  var TEN_DAYS=10*24*60*60*1000;
-  safeLS('set','velo_last_visit', now.toString());
-  // Production: if(lastVisit && (now - parseInt(lastVisit)) > TEN_DAYS) showWelcomeBack();
-  // Demo: show on first-ever load to illustrate feature
-  if(!lastVisit) setTimeout(showWelcomeBack, 1800);
-}
-function showWelcomeBack(){
-  document.getElementById('welcomeBack').style.display='flex';
-}
-function closeWelcomeBack(openDon){
-  document.getElementById('welcomeBack').style.display='none';
-  if(openDon) setTimeout(function(){ openModal('donModal'); },400);
-}
 
 // ── POST-CHAT donation reminder (unless monthly donor) ────
 function shouldShowDonReminder(){
@@ -6262,7 +6222,6 @@ function triggerDonBanner(){
 }
 
 // Init on load
-checkWelcomeBack();
 loadTodayMood();
 // Extend navTo for per-screen init
 function navTo(id){
@@ -6275,20 +6234,20 @@ function closeDonBanner(donate){ var b=document.getElementById('donBanner'); if(
 function doLoginUser(){
   var em=document.getElementById('luEmail');
   var pw=document.getElementById('luPass');
-  if(!em||!em.value.trim()){toast('Ingresa tu email');return;}
-  if(!pw||!pw.value.trim()){toast('Ingresa tu contrasena');return;}
+  if(!em||!em.value.trim()){toast('⚠️','Ingresa tu email');return;}
+  if(!pw||!pw.value.trim()){toast('⚠️','Ingresa tu contraseña');return;}
   try{localStorage.setItem('velo_session','user');localStorage.removeItem('velo_banner_shown');}catch(err){}
   goTo('home');
-  setTimeout(function(){toast('Bienvenido/a de vuelta');},400);
+  setTimeout(function(){toast('🌿','Bienvenido/a de vuelta');},400);
 }
 function doLoginPro(){
   var em=document.getElementById('lpEmail');
   var pw=document.getElementById('lpPass');
-  if(!em||!em.value.trim()){toast('Ingresa tu email');return;}
-  if(!pw||!pw.value.trim()){toast('Ingresa tu contrasena');return;}
+  if(!em||!em.value.trim()){toast('⚠️','Ingresa tu email');return;}
+  if(!pw||!pw.value.trim()){toast('⚠️','Ingresa tu contraseña');return;}
   try{localStorage.setItem('velo_session','pro');localStorage.setItem('velo_pro_approved','true');}catch(err){}
   goTo('pro-panel');
-  setTimeout(function(){toast('Bienvenido/a al panel');},400);
+  setTimeout(function(){toast('🌿','Bienvenido/a al panel');},400);
 }
 
 
@@ -6346,10 +6305,10 @@ function closeBottleWrite(){
 }
 function sendBottle(){
   var txt = document.getElementById('bottleText');
-  if(!txt || !txt.value.trim()){ toast('Escribi algo primero'); return; }
+  if(!txt || !txt.value.trim()){ toast('🍾','Escribí algo primero'); return; }
   closeBottleWrite();
   if(txt) txt.value = '';
-  showSuc('Tu botella fue lanzada al mar de Velo. Alguien la recogerá con calma y cariño.');
+  showSuc('🍾','¡Botella lanzada!','Tu botella fue lanzada al mar de Velo. Alguien la recogerá con calma y cariño.');
 }
 
 // ── URGENCY SELECTOR ──────────────────────────────────────
